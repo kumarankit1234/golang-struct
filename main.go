@@ -25,5 +25,10 @@ func main() {
 		},
 	}
 
+	ankit.updateName("rahul")
 	fmt.Printf("%+v", ankit)
+}
+
+func (p person) updateName(newFirstName string) {
+	p.firstname = newFirstName
 }
