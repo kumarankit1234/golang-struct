@@ -25,8 +25,7 @@ func main() {
 		},
 	}
 
-	pointerToAnkit := &ankit
-	pointerToAnkit.updateName("rahul")
+	ankit.updateName("rahul")
 	fmt.Printf("%+v", ankit)
 }
 
