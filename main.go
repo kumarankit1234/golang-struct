@@ -24,5 +24,6 @@ func main() {
 			zipCode: 1232,
 		},
 	}
+
 	fmt.Printf("%+v", ankit)
 }
