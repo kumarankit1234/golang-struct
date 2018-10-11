@@ -25,10 +25,11 @@ func main() {
 		},
 	}
 
-	ankit.updateName("rahul")
+	pointerToAnkit := &ankit
+	pointerToAnkit.updateName("rahul")
 	fmt.Printf("%+v", ankit)
 }
 
-func (p person) updateName(newFirstName string) {
-	p.firstname = newFirstName
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson).firstname = newFirstName
 }
